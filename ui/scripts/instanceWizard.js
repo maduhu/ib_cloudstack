@@ -729,11 +729,12 @@
             if (group != null && group.length > 0)
                 array1.push("&group=" + todb(group));
 
-	    var u_data = args.data.userdata;
-	    if (u_data != null && u_data.length > 0)
-		array1.push("&userdata=" +todb(u_data));
-	    //you need to encode the userdata before adding it to the API call
+	    var encoded_data = btoa(args.data.userdata);
 
+	    if (encoded_data != null && encoded_data.length > 0)
+		array1.push("&userdata=" +todb(encoded_data));
+
+	    console.log(encoded_data);
             //array1.push("&startVm=false");	//for testing only, comment it out before checking in
 
             $.ajax({
