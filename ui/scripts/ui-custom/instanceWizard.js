@@ -969,6 +969,18 @@
                         return false;
                     }
 
+		    //Userdata textarea
+		    $('.expandable').focus(function () {
+			$(this).animate({ height: "4em" }, 5);
+			$('.userdata-select').animate({ paddingBottom: "45px" }, 35);
+		    });
+
+
+		    $('.expandable').blur(function () {
+			$(this).animate({height: "1em" }, 5); 
+			$('.userdata-select').animate({ paddingBottom: "0" }, 35);
+		    });
+
                     // Close button
                     if ($target.closest('div.button.cancel').size()) {
                         close();

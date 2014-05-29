@@ -360,8 +360,17 @@ under the License.
                       <input type="text" name="groupname" class="disallowSpecialCharacters" />
                     </div>
                   </div>
+		  <!-- Add Userdata -->	
+		  <div class="select userdata-select">
+		    <div class="name">
+		      <span>User Data (<fmt:message key="label.optional"/>)</span>
+		    </div>
+		    <div class="value">
+		      <textarea rows="1" cols="17" name="userdata" class="expandable"></textarea>
+		    </div>
+		  </div>
                   <!-- Zone -->
-                  <div class="select">
+                  <div class="select odd">
                     <div class="name">
                       <span><fmt:message key="label.zone"/></span>
                     </div>
@@ -373,7 +382,7 @@ under the License.
                     </div>
                   </div>
                   <!-- Hypervisor -->
-                  <div class="select odd">
+                  <div class="select">
                     <div class="name">
                       <span><fmt:message key="label.hypervisor"/></span>
                     </div>
@@ -385,7 +394,7 @@ under the License.
                     </div>
                   </div>
                   <!-- Template -->
-                  <div class="select">
+                  <div class="select odd">
                     <div class="name">
                       <span><fmt:message key="label.template"/></span>
                     </div>
@@ -397,7 +406,7 @@ under the License.
                     </div>
                   </div>
                   <!-- Service offering -->
-                  <div class="select odd">
+                  <div class="select">
                     <div class="name">
                       <span><fmt:message key="label.compute.offering"/></span>
                     </div>
@@ -409,7 +418,7 @@ under the License.
                     </div>
                   </div>
                   <!-- Data disk offering -->
-                  <div class="select">
+                  <div class="select odd">
                     <div class="name">
                       <span><fmt:message key="label.data.disk.offering"/></span>
                     </div>
@@ -448,7 +457,7 @@ under the License.
                   </div>
                   
                   <!-- Security groups -->
-                  <div class="select odd">
+                  <div class="select">
                     <div class="name">
                       <span><fmt:message key="label.security.groups"/></span>
                     </div>

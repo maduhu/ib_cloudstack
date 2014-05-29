@@ -729,6 +729,7 @@
             if (group != null && group.length > 0)
                 array1.push("&group=" + todb(group));
 
+
 	    var encoded_data = btoa(args.data.userdata);
 
 	    if (encoded_data != null && encoded_data.length > 0)
